@@ -19,10 +19,12 @@
       opacity: 0;
     }
   }
+
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
+
   &--white {
     background-color: $color-white;
     color: $color-grey-dark;
@@ -31,6 +33,16 @@
       color: $color-grey-dark;
     }
   }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-grey-dark;
+    &::after {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
   &::after {
     content: '';
     display: inline-block;
